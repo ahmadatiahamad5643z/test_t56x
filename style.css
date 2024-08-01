@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* header111111111111111111111111111111111111111111111111111111111111111111 */
+.header1 {
+    background: #ffffff;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    padding-left: 8%;
+    padding-right: 5%;
+}
+
+.header1 .logo{
+    text-decoration: none;
+    color:rgb(6, 6, 108);
+    font-weight:bolder;
+    font-size: 2em;
+    margin-right: 40px;
+    letter-spacing: 1px;
+    font-style: italic;
+}
+
+.header1 .logo span{
+ color: red;
+}
+
+.header1 nav{
+    display: flex;
+    align-items: center;
+}
+
+.header1 nav .div-icon-header{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #202C45;
+    border-radius: 40px;
+    color: #ffffff;
+}
+
+.header1 .div-info-header{
+    padding-left: 15px;
+}
+
+.header1 .div-info-header h3,p{
+    display: flex;
+    justify-content: center;
+}
+
+.a-header{
+    text-decoration: none;
+    color: black;
+}
+
+.header1 nav{
+    margin-left: 10px;
+}
+
+@media (max-width:950px) and (min-width:780px){
+    .header1 {
+        background: #ef0909;
+
+        padding-left: 7%;
+        padding-right: 3%;
+    }
+    .header1 .div-info-header{
+        padding-left: 10px;
+        font-size: 14px;
+    }
+    .header1 .logo{
+        font-size: 1.8em;
+        margin-right: 30px;
+    }
+    
+    .header1 nav .div-icon-header{
+    width: 35px;
+    height: 35px;
+    border-radius: 35px;
+    }
+
+}
+@media(max-width:780px)and (min-width:670px){
+    .header1 {
+        background: #07ffe2;
+
+        padding-left: 6%;
+        padding-right: 2%;
+    }
+    .header1 .div-info-header{
+        padding-left: 8px;
+        font-size: 11px;
+    }
+    .header1 .logo{
+        font-size: 1.7em;
+        margin-right: 25px;
+    }
+    .header1 nav .div-icon-header{
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+        }
+}
+@media(max-width:670px)and (min-width:550px){
+    .header1 {
+        background: #b34d4d;
+
+        padding-left: 5%;
+        padding-right: 2%;
+    }
+    .header1 .div-info-header{
+        padding-left: 5px;
+        font-size: 9px;
+    }
+    .header1 .logo{
+        font-size: 1.6em;
+        margin-right: 20px;
+    }
+    .header1 nav .div-icon-header{
+        width: 25px;
+        height: 25px;
+        border-radius: 25px;
+        }
+} 
+@media(max-width:550px)and (min-width:300px){
+    .header1 {
+        background: #002fff;
+
+        padding-left: 4%;
+        padding-right: 3%;
+    }
+    .Opening{
+        display: none;
+    }
+    .header1 .div-info-header{
+        padding-left: 5px;
+        font-size: 10px;
+    }
+    .header1 .logo{
+        font-size: 1.2em;
+        margin-right: 10px;
+    }  
+} 
+
+
+/* header 2222222222222222222222222222222222222222222222222222222222222222222222222222222 */
+.header2 {
+    background-color: #202C45;
+    width: 100%;
+    position: relative;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    padding-left: 8%;
+    padding-right: 5%;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.header2 .get-appoint{
+    color: black;
+    background-color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 12px;
+    letter-spacing: 1px;
+    border-radius: 40px;
+    font-weight: 900;
+    transition: 0.7s ease;
+    margin: 6px 0px;
+}
+
+.header2 .get-appoint:hover{
+    background-color: #2b6eeaa4;
+    transform: scale(1.1);
+}
+
+.header2 ul{
+    list-style: none;
+}
+
+.header2 ul li{
+    display: inline-block;
+    position: relative ;
+}
+
+.header2 ul li a{
+    display: block;
+    padding: 20px 25px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.header2>nav>ul>li>a{
+    color: #fff;
+}
+
+.header2 ul li ul.dropdown li{
+    display: block;
+}
+
+.header2 ul li ul.dropdown{
+    width: 200%;
+    background: #fff;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+.header2 ul li a:hover{
+ color: rgb(43, 0, 255);
+}
+
+.header2 ul li:hover ul.dropdown{
+    display: block;
+}
+
+@media(max-width:1000px) and (min-width:800px) {
+    .header2 {
+        padding-left: 4%;
+        padding-right: 3%;
+        background-color: #05ff26;
+    }
+    .header2 .get-appoint{
+        margin-left: 30px;
+    }
+    .header2 ul li a{
+        padding: 20px 15px;
+        font-size: 20px;
+        font-weight: 700;
+    }
+}
+@media(max-width:800px)and (min-width:630px){
+    .header2 {
+        background-color: #0051ff;
+        padding-left: 3%;
+        padding-right: 2%;
+    }
+    .header2 .get-appoint{
+        font-weight: 700;
+    }
+    .header2 ul li a{
+        padding: 20px 10px;
+        font-size: 16px;
+        font-weight: 650;
+    }
+}
+@media(max-width:630px) and (min-width:540px){
+    .header2 {
+        background-color: #dd036c;
+    }
+    .header2 .get-appoint{
+        font-weight: 600;
+        margin-left: 10px;
+        font-size: 11px;
+    }
+    .header2 ul li a{
+        padding: 20px 7px;
+        font-size: 13px;
+        font-weight: 600;
+    }
+}
+
+/* section11111111111111111111111111111111111111111111111111111111111111111111111111111111111 */
+section.oo{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(4, 255, 255);
+}
+section.ll{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(4, 255, 0);
+}
